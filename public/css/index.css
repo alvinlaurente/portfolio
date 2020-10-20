@@ -13,7 +13,8 @@ html {
   font-weight: bold;
   letter-spacing: 2px;
   position: fixed !important;
-  background-color: transparent !important;
+  background-color: #000000 !important;
+  z-index: 2;
 }
 
 .custom-navbar .navbar-nav .nav-link {
@@ -40,8 +41,7 @@ html {
   }
   
 .custom-navbar-collapse {
-  background-color: #ff65bd !important;
-  z-index: 1;
+  background-color: #000000 !important;
 }
   
 .custom-navbar-collapse a:hover {
@@ -69,21 +69,22 @@ html {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 1) 100% ), url(../images/cyberpunk-wallpaper-2.jpg);
   background-attachment: fixed;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .introduction .introContent {
-  width: 50%;
   text-align: justify;
 }
 
 .introduction .introContent h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
 .introduction .introContent h5 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -100,10 +101,22 @@ html {
   letter-spacing: 2px;
 }
 
+.firstContent p {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
-@media (min-width: 767px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .custom-navbar {
     position: absolute !important;
+    font-size: 30px;
   }
   
   .custom-navbar .navbar-nav .nav-link:hover {
@@ -119,7 +132,6 @@ html {
     margin: auto;
     padding-bottom: 3px;
     margin-bottom: -6px;
-    transition: all 0.5s ease-in-out;
   }
 
   .custom-navbar .navbar-nav .nav-link.active {
@@ -127,7 +139,8 @@ html {
   }
 
   .introduction .introContent h1 {
-    font-size: 88px;
+    text-align: left;
+    font-size: 100px;
     font-weight: bold;
     letter-spacing: 8px;
   }
@@ -150,23 +163,3 @@ html {
     letter-spacing: 2px;
   }
 }
-
-/* .introduction .introduction-divider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.introduction .introduction-divider svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 30px;
-}
-
-.introduction .introduction-divider .shape-fill {
-  fill: #FFFFFF;
-} */
