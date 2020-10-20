@@ -1,0 +1,154 @@
+/* Global Style */
+body,
+html {
+  color: #ed33b9;
+  scroll-behavior: smooth;
+  font-family: "Blender Pro Bold", sans-serif;
+  text-decoration: none;
+}
+
+.custom-navbar {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: fixed !important;
+  background-color: transparent !important;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  position: relative;
+}
+
+.custom-navbar .navbar-nav .nav-link.active {
+  color: #ed33b9 !important;
+}
+
+.custom-navbar .nav-link {
+  color: #00c2d1 !important;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: #00c2d1;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url( 
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 194, 209, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+.custom-navbar-collapse {
+  background-color: #f9e900 !important;
+  z-index: 1;
+}
+  
+.custom-navbar-collapse a:hover {
+  color: #ed33b9 !important;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+  
+.jumbotron {
+  /* Multiple background with no-repeat */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin-bottom: auto;
+}
+
+.contentDivider {
+  background-color: black;
+  height: 5vh;
+}
+
+.introduction {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 1) 100% ), url(../images/cyberpunk-wallpaper-2.jpg);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.introduction .introContent {
+  width: 50%;
+  text-align: justify;
+}
+
+.introduction .introContent h1 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.introduction .introContent h5 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* .introduction .introduction-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.introduction .introduction-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+}
+
+.introduction .introduction-divider .shape-fill {
+  fill: #FFFFFF;
+} */
+
+.firstContent {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 1) 0% , rgba(0, 0, 0, 0.8) 30% , rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%), url(../images/cyberpunk-wallpaper.jpg);;
+  color: #00c2d1;
+}
+
+
+@media (min-width: 767px) {
+  .custom-navbar {
+    position: absolute !important;
+  }
+  
+  .custom-navbar .navbar-nav .nav-link:hover {
+    color: #f9e900 !important;
+    transition: all 0.5s ease;
+  }
+
+  .custom-navbar .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #f9e900;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -6px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .custom-navbar .navbar-nav .nav-link.active {
+    color: #f9e900 !important;
+  }
+
+  .introduction .introContent h1 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .introduction .introContent h5 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}
