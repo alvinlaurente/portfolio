@@ -38,6 +38,7 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="./index.html">
@@ -57,15 +58,18 @@
       </div>
     </div>
   </nav>
+  <!-- End of Navbar -->
 
-  <div class="jumbotron jumbotron-fluid d-flex introduction">
+  <!-- Introduction -->
+  <div class="jumbotron jumbotron-fluid d-flex introduction" id="introduction">
     <!-- Parallax Stars -->
     <!-- <div class="align-self-end" id='stars'></div>
     <div class="align-self-end" id='stars2'></div>
     <div class="align-self-end" id='stars3'></div> -->
 
+    <!-- Introduction content -->
     <div class="container align-self-center">
-      <div class="row mb-5 introContent">
+      <div class="row text-justify mb-5 intro-content">
         <div class="col-lg-6">
           <div class="neon-pink-text">
             <div class="glitch-1" data-text="">
@@ -82,39 +86,63 @@
         </div>
       </div>
 
-      <div class="row justify-content-center text-center contactButton">
-        <div class="col-lg-2">
+      <!-- Contact Button -->
+      <div class="row text-center contact-button">
+        <div class="col-lg-2 offset-lg-2 col-md-12">
           <a href="#">
-            <img src="../public/images/contact1.png" class="neon-pink-img" width="auto" height="auto">
+            <img src="../public/images/contact.png" class="neon-pink-img h-75" width="auto" height="auto">
           </a>
         </div>
       </div>
     </div>
   </div>
+  <!-- End of Introduction -->
 
-  <!-- <div class="contentDivider"></div> -->
-
-  <div class="jumbotron jumbotron-fluid firstContent">
+  <!-- Relevant Skill content -->
+  <div class="jumbotron jumbotron-fluid relevant-skill" id="relevant-skill">
     <div class="container">
-      <div class="row">
-        <div class="col-6">
+      <div class="row text-right justify-content-end">
+        <div class="neon-cyan-text">
+          <h1><span class="fast-flicker-cyan">What </span>I <span class="slow-flicker-cyan">Can </span>Do?</h1>
         </div>
       </div>
-      <div class="neon-cyan-text">
-        <h1>Profile</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id suscipit quam quisquam, nobis
-          voluptatum esse aspernatur veritatis nemo nam hic, praesentium minima cum tempore. Earum, fugit temporibus!
-          Repudiandae illo iusto laborum magni ea similique tempore voluptatum, minima veritatis cumque provident. Atque
-          asperiores eligendi nisi commodi nulla assumenda illum quas nemo debitis cum ex qui possimus earum, harum
-          quasi
-          quis. Maxime quis reiciendis nobis excepturi porro est aliquid voluptatibus, at fugiat ducimus, magni
-          architecto
-          distinctio, nisi repellendus quidem quisquam. In laborum a blanditiis, incidunt accusamus inventore architecto
-          deleniti numquam facere quisquam provident ducimus. Molestias non quos quas unde cumque excepturi aspernatur?
-        </p>
+
+      <!-- Skill Cards -->
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card frontEndSkills">
+            <img class="card-img-top" src="../public/images/mern.png" width="auto" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Front End</h5>
+              <p class="card-text">HTML, CSS (Bootstrap), Vanilla.js, React, Vue</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card backEndSkills">
+            <img class="card-img-top" src="../public/images/mern.png" width="auto" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Back End</h5>
+              <p class="card-text">MongoDB, PostgreSQL, Express.js, Node.js</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card otherSkills">
+            <img class="card-img-top" src="../public/images/mern.png" width="auto" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Other</h5>
+              <p class="card-text">SASS, Firebase, Swagger, CI/CD</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  </div>
+  </div>
+  </div>
+  <!-- End of Relevant Skill content -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

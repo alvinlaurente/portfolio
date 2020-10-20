@@ -57,56 +57,37 @@ html {
   background-repeat: no-repeat;
   height: 100%;
   margin-bottom: auto;
-}
-
-.contentDivider {
-  background-color: #000000;
-  height: 5vh;
+  overflow: hidden;
 }
 
 .introduction {
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 1) 100% ), url(../images/cyberpunk-wallpaper-introduction.jpg);
   background-attachment: fixed;
-  overflow: hidden;
   position: relative;
   z-index: 1;
 }
 
-.introduction .introContent {
-  text-align: justify;
-}
-
-.introduction .introContent h1 {
+.introduction .intro-content h1 {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.introduction .introContent h5 {
+.introduction .intro-content h5 {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-.introduction .contactButton img{
-  max-height: 100px;
-}
-
-.firstContent {
+.relevant-skill {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 1) 0% , rgba(0, 0, 0, 0.8) 30% , rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%), url(../images/cyberpunk-wallpaper-content1.jpg);;
+  background-image: linear-gradient(rgba(0, 0, 0, 1) 0% , rgba(0, 0, 0, 0.5) 30% , rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 1) 100%), url(../images/cyberpunk-wallpaper-content1.jpg);;
   color: #00c2d1;
 }
 
-.firstContent h1 {
+.relevant-skill h1 {
   font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.firstContent p {
-  font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -143,25 +124,25 @@ html {
     color: #ff65bd !important;
   }
 
-  .introduction .introContent h1 {
+  .introduction .intro-content h1 {
     font-size: 100px;
     font-weight: bold;
     letter-spacing: 8px;
   }
   
-  .introduction .introContent h5 {
+  .introduction .intro-content h5 {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
   }
 
-  .firstContent h1 {
+  .relevant-skill h1 {
     font-size: 88px;
     font-weight: bold;
     letter-spacing: 8px;
   }
 
-  .firstContent p {
+  .relevant-skill p {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -174,13 +155,13 @@ html {
     font-size: 24px;
   }
 
-  .introduction .introContent h1 {
+  .introduction .intro-content h1 {
     font-size: 80px;
     font-weight: bold;
     letter-spacing: 8px;
   }
   
-  .introduction .introContent h5 {
+  .introduction .intro-content h5 {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
