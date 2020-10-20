@@ -1,3 +1,6 @@
+/* Credit to Tee Diang */
+/* Breathe (Coded on iOS) at https://codepen.io/cybercountess/pen/RwNXxyq */
+
 .neon-text {
   letter-spacing: 2;
   left: 50%;
@@ -5,8 +8,8 @@
   text-transform: uppercase;
   font-size: 6em;
   color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
+    -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
     0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   animation: shine 2s forwards, flicker 3s infinite;
 }
@@ -17,13 +20,13 @@
   36%,
   75% {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
+      -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   }
   28%,
   33% {
-    color: #ff65bd;
+    color: #ed33b9;
     text-shadow: none;
   }
   82%,
@@ -34,31 +37,31 @@
 }
 
 .very-slow-flicker {
-  animation: shine 5s forwards, blink 10s 8s infinite;
+  animation: shine 8s forwards, blink 10s 8s infinite;
 }
 
 .slow-flicker {
-  animation: shine 4s forwards, blink 9s 7s infinite;
+  animation: shine 7s forwards, blink 9s 7s infinite;
 }
 
 .flicker {
-  animation: shine 3s forwards, blink 8s 6s infinite;
+  animation: shine 6s forwards, blink 8s 6s infinite;
 }
 
 .flicker-2 {
-  animation: shine 3s forwards, blink 9s 5s infinite;
+  animation: shine 5.5s forwards, blink 9s 5s infinite;
 }
 
 .flicker-3 {
-  animation: shine 3s forwards, blink 10s 4s infinite;
+  animation: shine 5s forwards, blink 10s 4s infinite;
 }
 
 .fast-flicker {
-  animation: shine 3s forwards, blink 5s 4s infinite;
+  animation: shine 4.5s forwards, blink 5s 4s infinite;
 }
 
 .very-fast-flicker {
-  animation: shine 2s forwards, blink 3s 4s infinite;
+  animation: shine 4s forwards, blink 3s 4s infinite;
 }
 
 @keyframes shine {
@@ -68,8 +71,8 @@
   }
   100% {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
+      -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
   }
 }
