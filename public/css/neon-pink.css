@@ -1,0 +1,204 @@
+/* Credit to Tee Diang */
+/* Breathe (Coded on iOS) at https://codepen.io/cybercountess/pen/RwNXxyq */
+
+.neon-pink-text {
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
+    -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine-pink 2s forwards, flicker-pink 3s infinite;
+}
+
+@keyframes blink-pink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
+      -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ed33b9;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.very-slow-flicker-pink {
+  animation: shine-pink 8s forwards, blink-pink 10s 8s infinite;
+}
+
+.slow-flicker-pink {
+  animation: shine-pink 7s forwards, blink-pink 9s 7s infinite;
+}
+
+.flicker-pink {
+  animation: shine-pink 6s forwards, blink-pink 8s 6s infinite;
+}
+
+.flicker-pink-2 {
+  animation: shine-pink 5.5s forwards, blink-pink 9s 5s infinite;
+}
+
+.flicker-pink-3 {
+  animation: shine-pink 5s forwards, blink-pink 10s 4s infinite;
+}
+
+.fast-flicker-pink {
+  animation: shine-pink 4.5s forwards, blink-pink 5s 4s infinite;
+}
+
+.very-fast-flicker-pink {
+  animation: shine-pink 4s forwards, blink-pink 3s 4s infinite;
+}
+
+@keyframes shine-pink {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
+      -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker-pink {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

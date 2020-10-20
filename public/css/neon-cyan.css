@@ -1,83 +1,83 @@
 /* Credit to Tee Diang */
 /* Breathe (Coded on iOS) at https://codepen.io/cybercountess/pen/RwNXxyq */
 
-.neon-text {
+.neon-cyan-text {
   letter-spacing: 2;
   left: 50%;
   top: 50%;
   text-transform: uppercase;
   font-size: 6em;
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
-    -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  animation: shine 2s forwards, flicker 3s infinite;
+  color: #85f7ff;
+  text-shadow: 0 0 0.6rem #85f7ff, 0 0 1.5rem #00c2d1,
+    -0.2rem 0.1rem 1rem #00c2d1, 0.2rem 0.1rem 1rem #00c2d1,
+    0 -0.5rem 2rem #0098a3, 0 0.5rem 3rem #0098a3;
+  animation: shine-cyan 2s forwards, flicker-cyan 3s infinite;
 }
 
-@keyframes blink {
+@keyframes blink-cyan {
   0%,
   22%,
   36%,
   75% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
-      -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    color: #85f7ff;
+    text-shadow: 0 0 0.6rem #85f7ff, 0 0 1.5rem #00c2d1,
+      -0.2rem 0.1rem 1rem #00c2d1, 0.2rem 0.1rem 1rem #00c2d1,
+      0 -0.5rem 2rem #0098a3, 0 0.5rem 3rem #0098a3;
   }
   28%,
   33% {
-    color: #ed33b9;
+    color: #00c2d1;
     text-shadow: none;
   }
   82%,
   97% {
-    color: #ff2483;
+    color: #0098a3;
     text-shadow: none;
   }
 }
 
-.very-slow-flicker {
-  animation: shine 8s forwards, blink 10s 8s infinite;
+.very-slow-flicker-cyan {
+  animation: shine-cyan 8s forwards, blink-cyan 10s 8s infinite;
 }
 
-.slow-flicker {
-  animation: shine 7s forwards, blink 9s 7s infinite;
+.slow-flicker-cyan {
+  animation: shine-cyan 7s forwards, blink-cyan 9s 7s infinite;
 }
 
-.flicker {
-  animation: shine 6s forwards, blink 8s 6s infinite;
+.flicker-cyan {
+  animation: shine-cyan 6s forwards, blink-cyan 8s 6s infinite;
 }
 
-.flicker-2 {
-  animation: shine 5.5s forwards, blink 9s 5s infinite;
+.flicker-cyan-2 {
+  animation: shine-cyan 5.5s forwards, blink-cyan 9s 5s infinite;
 }
 
-.flicker-3 {
-  animation: shine 5s forwards, blink 10s 4s infinite;
+.flicker-cyan-3 {
+  animation: shine-cyan 5s forwards, blink-cyan 10s 4s infinite;
 }
 
-.fast-flicker {
-  animation: shine 4.5s forwards, blink 5s 4s infinite;
+.fast-flicker-cyan {
+  animation: shine-cyan 4.5s forwards, blink-cyan 5s 4s infinite;
 }
 
-.very-fast-flicker {
-  animation: shine 4s forwards, blink 3s 4s infinite;
+.very-fast-flicker-cyan {
+  animation: shine-cyan 4s forwards, blink-cyan 3s 4s infinite;
 }
 
-@keyframes shine {
+@keyframes shine-cyan {
   0% {
     color: #6b1839;
     text-shadow: none;
   }
   100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ed33b9,
-      -0.2rem 0.1rem 1rem #ed33b9, 0.2rem 0.1rem 1rem #ed33b9,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    color: #85f7ff;
+    text-shadow: 0 0 0.6rem #85f7ff, 0 0 1.5rem #00c2d1,
+      -0.2rem 0.1rem 1rem #00c2d1, 0.2rem 0.1rem 1rem #00c2d1,
+      0 -0.5rem 2rem #0098a3, 0 0.5rem 3rem #0098a3;
   }
 }
 
-@keyframes flicker {
+@keyframes flicker-cyan {
   from {
     opacity: 1;
   }

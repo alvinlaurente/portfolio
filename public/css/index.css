@@ -85,13 +85,19 @@ html {
 .introduction .introContent h5 {
   font-size: 16px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .firstContent {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 1) 0% , rgba(0, 0, 0, 0.8) 30% , rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%), url(../images/cyberpunk-wallpaper.jpg);;
   color: #00c2d1;
+}
+
+.firstContent h1 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 
@@ -121,12 +127,24 @@ html {
   }
 
   .introduction .introContent h1 {
-    font-size: 80px;
+    font-size: 88px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 8px;
   }
   
   .introduction .introContent h5 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .firstContent h1 {
+    font-size: 88px;
+    font-weight: bold;
+    letter-spacing: 8px;
+  }
+
+  .firstContent p {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
