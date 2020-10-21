@@ -122,8 +122,35 @@ html {
 }
 
 .relevant-skill .card{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 0;
+}
+
+.relevant-skill .card.parent-card:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+}
+
+.relevant-skill .card.parent-card:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  z-index: -2;
+  
+  filter: blur(40px);
+}
+
+.relevant-skill .card.parent-card:before,
+.relevant-skill .card.parent-card:after {
+  background: linear-gradient(195deg, #0098a3 0%, #00c2d1 10%, transparent 25%, transparent 75%, #ed33b9 90%, #ff2483 100%);
 }
 
 .featured-work {
