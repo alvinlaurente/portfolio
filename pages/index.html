@@ -14,10 +14,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
-    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
-  <script src="../public/js/jquery.glow.js"></script>
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <!-- Font -->
   <link href="../public/fonts/BlenderPro-Bold/style.css" rel="stylesheet" type="text/css" />
@@ -100,8 +100,8 @@
 
   <!-- Relevant Skill content -->
   <div class="jumbotron jumbotron-fluid relevant-skill" id="relevant-skill">
-    <div class="container">
-      <div class="row text-right justify-content-end">
+    <div class="container h-100">
+      <div class="row align-items-start text-right justify-content-end mb-5">
         <div class="neon-cyan-text">
           <h1><span class="fast-flicker-cyan">What </span>I <span class="slow-flicker-cyan">Can </span>Do?</h1>
         </div>
@@ -109,45 +109,73 @@
 
       <!-- Skill Cards -->
       <div class="row text-center">
-        <div class="col-md-4">
-          <div class="card frontEndSkills">
-            <img class="card-img-top" src="../public/images/mern.png" width="auto" height="200px">
+        <div class="col-lg-8 col-12 col-sm-12 offset-lg-2 skill-cards">
+
+          <div class="card mx-1 frontEndSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
             <div class="card-body">
-              <h5 class="card-title">Front End</h5>
-              <p class="card-text">HTML, CSS (Bootstrap), Vanilla.js, React, Vue</p>
+              <h5 class="card-title">HTML</h5>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card backEndSkills">
-            <img class="card-img-top" src="../public/images/mern.png" width="auto" height="200px">
+          <div class="card mx-1 backEndSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
             <div class="card-body">
-              <h5 class="card-title">Back End</h5>
-              <p class="card-text">MongoDB, PostgreSQL, Express.js, Node.js</p>
+              <h5 class="card-title">CSS</h5>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card otherSkills">
-            <img class="card-img-top" src="../public/images/mern.png" width="auto" height="200px">
+          <div class="card mx-1 otherSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
             <div class="card-body">
-              <h5 class="card-title">Other</h5>
-              <p class="card-text">SASS, Firebase, Swagger, CI/CD</p>
+              <h5 class="card-title">Bootstrap</h5>
+            </div>
+          </div>
+          <div class="card mx-1 otherSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
+            <div class="card-body">
+              <h5 class="card-title">React</h5>
+            </div>
+          </div>
+          <div class="card mx-1 otherSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
+            <div class="card-body">
+              <h5 class="card-title">Vue</h5>
+            </div>
+          </div>
+          <div class="card mx-1 otherSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
+            <div class="card-body">
+              <h5 class="card-title">MongoDB</h5>
+            </div>
+          </div>
+          <div class="card mx-1 otherSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
+            <div class="card-body">
+              <h5 class="card-title">PostgreSQL</h5>
+            </div>
+          </div>
+          <div class="card mx-1 otherSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
+            <div class="card-body">
+              <h5 class="card-title">Express.js</h5>
+            </div>
+          </div>
+          <div class="card mx-1 otherSkills">
+            <img class="card-img-top" src="https://via.placeholder.com/100x100" width="auto" height="100px">
+            <div class="card-body">
+              <h5 class="card-title">Node.js</h5>
             </div>
           </div>
         </div>
       </div>
+      <!-- End of Skill Cards -->
+
     </div>
-  </div>
-  </div>
-  </div>
   </div>
   <!-- End of Relevant Skill content -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -155,6 +183,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="../public/js/script.js"></script>
 </body>
