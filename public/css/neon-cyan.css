@@ -11,7 +11,7 @@
   text-shadow: 0 0 0.6rem #85f7ff, 0 0 1.5rem #00c2d1,
     -0.2rem 0.1rem 1rem #00c2d1, 0.2rem 0.1rem 1rem #00c2d1,
     0 -0.5rem 2rem #0098a3, 0 0.5rem 3rem #0098a3;
-  animation: shine-cyan 2s forwards, flicker-cyan 3s infinite;
+  animation: shine-cyan 2s forwards, flicker-cyan 4s infinite;
 }
 
 @keyframes blink-cyan {
@@ -83,7 +83,7 @@
   }
 
   4% {
-    opacity: 0.9;
+    opacity: 0.93;
   }
 
   6% {
@@ -91,7 +91,7 @@
   }
 
   8% {
-    opacity: 0.95;
+    opacity: 0.80;
   }
 
   10% {
@@ -111,7 +111,7 @@
   }
 
   16% {
-    opacity: 0.98;
+    opacity: 0.88;
   }
 
   17% {
@@ -135,7 +135,7 @@
   }
 
   28% {
-    opacity: 0.98;
+    opacity: 0.75;
   }
 
   37% {
@@ -143,7 +143,7 @@
   }
 
   38% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   39% {
@@ -155,19 +155,19 @@
   }
 
   44% {
-    opacity: 0.97;
+    opacity: 0.77;
   }
 
   46% {
-    opacity: 0.94;
+    opacity: 0.72;
   }
 
   56% {
-    opacity: 0.9;
+    opacity: 0.84;
   }
 
   58% {
-    opacity: 0.9;
+    opacity: 0.94;
   }
 
   60% {
@@ -187,7 +187,7 @@
   }
 
   93% {
-    opacity: 0.93;
+    opacity: 0.84;
   }
 
   95% {
