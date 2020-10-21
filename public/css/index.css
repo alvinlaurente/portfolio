@@ -82,7 +82,7 @@ html {
 
 .relevant-skill {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 1) 0% , rgba(0, 0, 0, 0.5) 30% , rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 1) 100%), url(../images/layouts/cyberpunk-wallpaper-content1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 1) 0% , rgba(0, 0, 0, 0.5) 30% , rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 1) 100%), url(../images/layouts/cyberpunk-wallpaper-content2.jpg);
   color: #00c2d1;
 }
 
@@ -93,7 +93,7 @@ html {
 }
 
 .relevant-skill div.row:nth-child(1) {
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .relevant-skill .skill-cards .card {
