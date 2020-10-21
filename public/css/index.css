@@ -60,7 +60,7 @@ html {
 }
 
 /* Linear Gradient in every background */
-.introduction::after, .relevant-skill::after{
+.introduction::after, .relevant-skill::after, .featured-work::after {
   content: '';
   display: block;
   width: 100%;
@@ -73,6 +73,7 @@ html {
 .introduction {
   height: 100vh;
   position: relative;
+  background-attachment: fixed;
 }
 
 .introduction .intro-content {
@@ -84,6 +85,7 @@ html {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .introduction .intro-content h5 {
@@ -111,17 +113,23 @@ html {
 }
 
 .relevant-skill div.row:nth-child(1) {
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 }
 
 .relevant-skill .skill-cards .card {
+  background-color: transparent;
+  border: 0;
+}
+
+.relevant-skill .card{
   background-color: rgba(0, 0, 0, 0.5);
   border: 0;
 }
 
-.relevant-skill .card:nth-child(1){
-  background-color: transparent;
-  border: 0;
+.featured-work {
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
 }
 
 /* Small devices (landscape phones, 576px and up) */

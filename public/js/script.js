@@ -9,17 +9,21 @@ $(window).scroll(() => {
 
   // Introduction Text Parallax
   $(".intro-content").css({
-    'transform': 'translate(0px, ' + windowScroll / 24 + '%)'
+    'transform': 'translate(0px, ' + windowScroll / 6 + '%)'
   });
 
   $(".contact-button img").css({
     'transform': 'translate(0px, ' + windowScroll / 12 + '%)'
   });
+
+  $(".relevant-skill h1").css({
+    'transform': 'translate(0px, ' + windowScroll / 24 + '%)'
+  });
 });
 
 // Slick-carousel Cards
 const slickSettings = {
-  arrows: true,
+  arrows: false,
   infinite: true,
   autoplay: true,
   autoplaySpeed: 3500,
