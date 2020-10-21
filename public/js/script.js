@@ -22,6 +22,7 @@ const slickSettings = {
   arrows: true,
   infinite: true,
   autoplay: true,
+  autoplaySpeed: 3500,
   mobileFirst: true,
   responsive: [
     {
