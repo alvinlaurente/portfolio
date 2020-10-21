@@ -8,11 +8,11 @@ $(window).scroll(() => {
   let windowScroll = $(this).scrollTop();
 
   // Introduction Text Parallax
-  $(".introContent").css({
+  $(".intro-content").css({
     'transform': 'translate(0px, ' + windowScroll / 4 + '%)'
   });
 
-  $(".contactButton img").css({
+  $(".contact-button img").css({
     'transform': 'translate(0px, ' + windowScroll / 1.05 + '%)'
   });
 });

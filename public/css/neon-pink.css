@@ -206,7 +206,7 @@
 .neon-pink-img {
   -webkit-filter: drop-shadow(5px 5px 10px #ed33b9);
     filter: drop-shadow(5px 5px 10px #ed33b9);
-  animation: shine-pink-img 20s infinite;
+  animation: shine-pink-img 30s infinite;
 }
 
 @keyframes shine-pink-img {
