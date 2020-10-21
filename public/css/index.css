@@ -126,6 +126,7 @@ html {
   border: 0;
 }
 
+/* Glow Shadow */
 .relevant-skill .card.parent-card:before {
   content: '';
   position: absolute;
