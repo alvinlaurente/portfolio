@@ -27,7 +27,7 @@
   <link href="../public/css/neon-pink.css" rel="stylesheet" type="text/css" />
   <link href="../public/css/neon-cyan.css" rel="stylesheet" type="text/css" />
   <link href="../public/css/glitch.css" rel="stylesheet" type="text/css" />
-  <link href="../public/css/crt-flicker.css" rel="stylesheet" type="text/css" />
+  <link href="../public/css/lazyload.css" rel="stylesheet" type="text/css" />
 
   <link rel="icon" href="../public/images/brands/logo.png" type="image/png" />
   <title>Alvin Laurent Ertanto | Home</title>
@@ -35,10 +35,11 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark custom-navbar">
+  <nav class="navbar navbar-expand-sm custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="./index.html">
-        <img src="../public/images/brands/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img data-src="../public/images/brands/logo.png" width="30" height="30" class="lazy d-inline-block align-top"
+          alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,15 +58,16 @@
   <!-- End of Navbar -->
 
   <!-- Introduction -->
-  <div class="jumbotron jumbotron-fluid d-flex introduction" id="introduction">
+  <div class="lazy jumbotron jumbotron-fluid d-flex introduction"
+    data-bg="../public/images/layouts/cyberpunk-wallpaper-introduction.jpg" id="introduction">
     <!-- Parallax Stars -->
     <!-- <div class="align-self-end" id='stars'></div>
     <div class="align-self-end" id='stars2'></div>
     <div class="align-self-end" id='stars3'></div> -->
 
     <!-- Introduction content -->
-    <div class="container align-self-center">
-      <div class="row text-justify mb-5 intro-content">
+    <div class="container align-self-center intro-content">
+      <div class="row text-justify mb-5">
         <div class="col-lg-6">
           <div class="neon-pink-text">
             <div class="glitch-1" data-text="">
@@ -86,7 +88,8 @@
       <div class="row text-center contact-button">
         <div class="col-lg-2 offset-lg-2 col-md-12">
           <a href="#">
-            <img src="../public/images/brands/contact.png" class="neon-pink-img h-75" width="auto" height="auto">
+            <img data-src="../public/images/brands/contact.png" class="lazy neon-pink-img h-75" width="auto"
+              height="auto">
           </a>
         </div>
       </div>
@@ -95,11 +98,12 @@
   <!-- End of Introduction -->
 
   <!-- Relevant Skill content -->
-  <div class="jumbotron jumbotron-fluid relevant-skill" id="relevant-skill">
+  <div class="lazy jumbotron jumbotron-fluid relevant-skill"
+    data-bg="../public/images/layouts/cyberpunk-wallpaper-content2.jpg" id="relevant-skill">
     <div class="container h-100">
       <div class="row align-items-start text-right justify-content-end">
         <div class="neon-cyan-text">
-          <h1><span class="fast-flicker-cyan">What </span>I <span class="slow-flicker-cyan">Can </span>Do?</h1>
+          <h1><span class="fast-flicker-cyan"></span>Stack I Learned<span class="slow-flicker-cyan">?</span></h1>
         </div>
       </div>
 
@@ -108,154 +112,169 @@
         <div class="col-sm-12 skill-cards card">
 
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/html.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/html.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">HTML</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/css.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/css.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">CSS</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/sass.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/sass.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">SASS</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/bootstrap.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/bootstrap.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Bootstrap</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/js.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/js.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">JavaScript</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/angular.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/angular.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Angular</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/react.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/react.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">React</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/vue.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/vue.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Vue</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/mongodb.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/mongodb.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">MongoDB</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/postgresql.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/postgresql.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">PostgreSQL</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/mysql.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/mysql.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">MySQL</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/expressjs.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/expressjs.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Express.js</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/nodejs.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/nodejs.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Node.js</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/typescript.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/typescript.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">TypeScript</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/php.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/php.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">php</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/laravel.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/laravel.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Laravel</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/codeigniter.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/codeigniter.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">CodeIgniter</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/python.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/python.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Python</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/java.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/java.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Java</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/go.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/go.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Go</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/rubyonrail.png" width="auto"
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/rubyonrail.png" width="auto"
               height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Ruby</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/swift.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/swift.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Swift</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/kotlin.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/kotlin.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">Kotlin</h5>
             </div>
           </div>
           <div class="card mx-2">
-            <img class="mx-auto mt-3 neon-cyan-img" src="../public/images/skills/git.png" width="auto" height="50px">
+            <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/git.png" width="auto"
+              height="50px">
             <div class="card-body">
               <h5 class="card-title neon-cyan-text">git</h5>
             </div>
@@ -280,6 +299,10 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Lazy Load -->
+  <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.3/dist/lazyload.min.js"></script>
 
   <script src="../public/js/script.js"></script>
 </body>

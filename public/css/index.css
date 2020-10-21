@@ -51,7 +51,6 @@ html {
 }
   
 .jumbotron {
-  /* Multiple background with no-repeat */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,10 +59,23 @@ html {
   overflow: hidden;
 }
 
+/* Linear Gradient in every background */
+.introduction::after, .relevant-skill::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 1) 0% , rgba(0, 0, 0, 0.5) 20% , rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 1) 100%);
+  bottom: 0;
+}
+
 .introduction {
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 1) 100% ), url(../images/layouts/cyberpunk-wallpaper-introduction.jpg);
-  background-attachment: fixed;
+  position: relative;
+}
+
+.introduction .intro-content {
   position: relative;
   z-index: 1;
 }
@@ -82,18 +94,24 @@ html {
 
 .relevant-skill {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 1) 0% , rgba(0, 0, 0, 0.5) 30% , rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 1) 100%), url(../images/layouts/cyberpunk-wallpaper-content2.jpg);
   color: #00c2d1;
+  position: relative;
+}
+
+.relevant-skill .container {
+  position: relative;
+  z-index: 1;
 }
 
 .relevant-skill h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  margin-top: 3rem;
 }
 
 .relevant-skill div.row:nth-child(1) {
-  margin-bottom: 10rem;
+  margin-bottom: 15vh;
 }
 
 .relevant-skill .skill-cards .card {
@@ -108,7 +126,10 @@ html {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+  .custom-navbar {
+    position: absolute !important;
+    background: transparent !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
