@@ -14,6 +14,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
+  <!-- fullPage -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css"
+    integrity="sha512-1No3nMY/zD37h1POyqULfwc9WMzWvXcal6F7/OIhNdWkTaEbt4Y6eqX0vXail7Zh5JjnBdMMKr+lRvqTNFr3Ow=="
+    crossorigin="anonymous" />
+
   <!-- Slick -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css"
@@ -57,157 +62,168 @@
   </nav>
   <!-- End of Navbar -->
 
-  <!-- Introduction -->
-  <div class="lazy jumbotron jumbotron-fluid d-flex introduction"
-    data-bg="../public/images/layouts/cyberpunk-wallpaper-introduction.jpg" id="introduction">
-    <!-- Parallax Stars -->
-    <!-- <div class="align-self-end" id='stars'></div>
-    <div class="align-self-end" id='stars2'></div>
-    <div class="align-self-end" id='stars3'></div> -->
+  <!-- fullPage wrapper -->
+  <div id="fullpage">
 
-    <!-- Introduction content -->
-    <div class="container align-self-center intro-content">
-      <div class="row text-justify mb-5">
-        <div class="col-lg-6">
-          <div class="neon-pink-text">
-            <div class="glitch-1" data-text="">
-              <h1>Hi, I'm <span class="very-slow-flicker-pink">Alvin</span></h1>
+    <!-- Introduction -->
+    <section class="section">
+      <div class="lazy fp-bg jumbotron jumbotron-fluid d-flex introduction"
+        data-bg="../public/images/layouts/cyberpunk-wallpaper-introduction.jpg" id="introduction">
+
+        <!-- Introduction content -->
+        <div class="container align-self-center intro-content">
+          <div class="row text-justify mb-5">
+            <div class="col-lg-6">
+              <div class="neon-pink-text">
+                <div class="glitch-1" data-text="">
+                  <h1>Hi, I'm <span class="very-slow-flicker-pink">Alvin</span></h1>
+                </div>
+                <h5>I'm a <span class="flicker-pink">Computer Science</span> student and <span
+                    class="slow-flicker-pink">freelance</span> <span class="flicker-pink-2">full stack</span> <span
+                    class="very-fast-flicker-pink">web developer</span>. I'm also a <span class="flicker-pink"> PC
+                    Builder</span> Enthusiast. Check out my <span class="flicker-pink-3">work</span> below and feel free
+                  to
+                  <span class="fast-flicker-pink">contact</span> me if
+                  you want to <span class="slow-flicker-pink">work with me</span>.
+                </h5>
+              </div>
             </div>
-            <h5>I'm a <span class="flicker-pink">Computer Science</span> student and <span
-                class="slow-flicker-pink">freelance</span> <span class="flicker-pink-2">full stack</span> <span
-                class="very-fast-flicker-pink">web developer</span>. I'm also a <span class="flicker-pink"> PC
-                Builder</span> Enthusiast. Check out my <span class="flicker-pink-3">work</span> below and feel free to
-              <span class="fast-flicker-pink">contact</span> me if
-              you want to <span class="slow-flicker-pink">work with me</span>.
-            </h5>
+          </div>
+
+          <!-- Contact Button -->
+          <div class="row text-center contact-button">
+            <div class="col-lg-2 offset-lg-2 col-md-12">
+              <a href="#">
+                <img data-src="../public/images/brands/contact.png" class="lazy neon-pink-img h-75" width="auto"
+                  height="auto">
+              </a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- End of Introduction -->
 
-      <!-- Contact Button -->
-      <div class="row text-center contact-button">
-        <div class="col-lg-2 offset-lg-2 col-md-12">
-          <a href="#">
-            <img data-src="../public/images/brands/contact.png" class="lazy neon-pink-img h-75" width="auto"
-              height="auto">
-          </a>
-        </div>
+
+    <!-- Featured Work -->
+    <section class="section">
+      <div class="lazy fp-bg jumbotron jumbotron-fluid d-flex work-service"
+        data-bg="../public/images/layouts/cyberpunk-wallpaper-content3.jpg" id="work-service">
+
       </div>
-    </div>
-  </div>
-  <!-- End of Introduction -->
+    </section>
+    <!-- End of Featured Work -->
 
-  <!-- Relevant Skill content -->
-  <div class="lazy jumbotron jumbotron-fluid relevant-skill"
-    data-bg="../public/images/layouts/cyberpunk-wallpaper-content2.jpg" id="relevant-skill">
-    <div class="container h-100">
-      <div class="row align-items-start text-right justify-content-end">
-        <div class="neon-cyan-text">
-          <h1><span class="fast-flicker-cyan">Stacks</span> I've Learned<span class="slow-flicker-cyan">?</span></h1>
-        </div>
-      </div>
-
-      <div class="card parent-card">
-
-        <!-- 1st Skill Cards -->
-        <div class="row mb-3 text-center">
-          <div class="col-sm-12 skill-cards">
-
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/html.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text">HTML</h5>
-              </div>
+    <!-- Relevant Skill content -->
+    <section class="section">
+      <div class="lazy fp-bg jumbotron jumbotron-fluid relevant-skill"
+        data-bg="../public/images/layouts/cyberpunk-wallpaper-content2.jpg" id="relevant-skill">
+        <div class="container h-100">
+          <div class="row align-items-start text-right justify-content-end">
+            <div class="neon-cyan-text">
+              <h1><span class="fast-flicker-cyan">Stacks</span> I've Learned<span class="slow-flicker-cyan">?</span>
+              </h1>
             </div>
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/css.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text">CSS</h5>
-              </div>
-            </div>
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/sass.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text flicker-cyan">SASS</h5>
-              </div>
-            </div>
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/bootstrap.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text very-fast-flicker-cyan">Bootstrap</h5>
-              </div>
-            </div>
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/js.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text">JavaScript</h5>
-              </div>
-            </div>
-
           </div>
-        </div>
-        <!-- End of 1st Skill Cards -->
 
-        <!-- 2nd Skill Cards -->
-        <div class="row text-center">
-          <div class="col-sm-12 skill-cards">
+          <div class="card parent-card">
 
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/mongodb.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text flicker-cyan-2">MongoDB</h5>
-              </div>
-            </div>
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/postgresql.png"
-                width="auto" height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text">PostgreSQL</h5>
-              </div>
-            </div>
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/expressjs.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text">Express.js</h5>
-              </div>
-            </div>
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/react.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text fast-flicker-cyan">React.js</h5>
-              </div>
-            </div>
-            <div class="card mx-2">
-              <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/nodejs.png" width="auto"
-                height="50px">
-              <div class="card-body">
-                <h5 class="card-title neon-cyan-text">Node.js</h5>
-              </div>
-            </div>
+            <!-- 1st Skill Cards -->
+            <div class="row mb-3 text-center">
+              <div class="col-sm-12 skill-cards">
 
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/html.png" width="auto"
+                    height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text">HTML</h5>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/css.png" width="auto"
+                    height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text">CSS</h5>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/sass.png" width="auto"
+                    height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text flicker-cyan">SASS</h5>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/bootstrap.png"
+                    width="auto" height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text very-fast-flicker-cyan">Bootstrap</h5>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/js.png" width="auto"
+                    height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text">JavaScript</h5>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- End of 1st Skill Cards -->
+
+            <!-- 2nd Skill Cards -->
+            <div class="row text-center">
+              <div class="col-sm-12 skill-cards">
+
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/mongodb.png"
+                    width="auto" height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text flicker-cyan-2">MongoDB</h5>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/postgresql.png"
+                    width="auto" height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text">PostgreSQL</h5>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/expressjs.png"
+                    width="auto" height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text">Express.js</h5>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/react.png" width="auto"
+                    height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text fast-flicker-cyan">React.js</h5>
+                  </div>
+                </div>
+                <div class="card mx-2">
+                  <img class="lazy mx-auto mt-3 neon-cyan-img" data-src="../public/images/skills/nodejs.png"
+                    width="auto" height="50px">
+                  <div class="card-body">
+                    <h5 class="card-title neon-cyan-text">Node.js</h5>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- End of 2nd Skill Cards -->
           </div>
+
         </div>
-        <!-- End of 2nd Skill Cards -->
       </div>
+    </section>
+    <!-- End of Relevant Skill content -->
 
-    </div>
   </div>
-  <!-- End of Relevant Skill content -->
-
-  <!-- Featured Work -->
-  <div class="lazy jumbotron jumbotron-fluid d-flex featured-work"
-    data-bg="../public/images/layouts/cyberpunk-wallpaper-content4.jpg" id="featured-work">
-  </div>
-  </div>
-  <!-- End of Featured Work -->
+  <!-- End of fullPage wrapper -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -220,6 +236,11 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- fullPage -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"
+    integrity="sha512-eH2N2Zt2AeLuFlFvRSEeZcVeAESY+8nfIqhxx0XXEou6w/G4lLY3K8UKNYqi6e1pLXDduVF1KF/lbyxy3+X6OA=="
+    crossorigin="anonymous"></script>
 
   <!-- Lazy Load with Polyfill -->
   <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>

@@ -1,4 +1,10 @@
 /* Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 html {
   color: #ff2483;
@@ -60,7 +66,7 @@ html {
 }
 
 /* Linear Gradient in every background */
-.introduction::after, .relevant-skill::after, .featured-work::after {
+.introduction::after, .relevant-skill::after, .work-service::after {
   content: '';
   display: block;
   width: 100%;
@@ -73,7 +79,6 @@ html {
 .introduction {
   height: 100vh;
   position: relative;
-  background-attachment: fixed;
 }
 
 .introduction .intro-content {
@@ -92,6 +97,11 @@ html {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.work-service {
+  height: 100vh;
+  position: relative;
 }
 
 .relevant-skill {
@@ -152,12 +162,6 @@ html {
 .relevant-skill .card.parent-card:before,
 .relevant-skill .card.parent-card:after {
   background: linear-gradient(195deg, #0098a3 0%, #00c2d1 10%, transparent 25%, transparent 75%, #ed33b9 90%, #ff2483 100%);
-}
-
-.featured-work {
-  height: 100vh;
-  position: relative;
-  background-attachment: fixed;
 }
 
 /* Small devices (landscape phones, 576px and up) */
