@@ -119,11 +119,12 @@ html {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 5px;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 .relevant-skill div.row:nth-child(1) {
-  margin-bottom: 10vh;
+  margin-bottom: 6rem;
 }
 
 .relevant-skill .skill-cards .card {
@@ -140,20 +141,20 @@ html {
 .relevant-skill .card.parent-card:before {
   content: '';
   position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
+  top: -.2rem;
+  bottom: -.2rem;
+  left: -.2rem;
+  right: -.2rem;
   z-index: -1;
 }
 
 .relevant-skill .card.parent-card:after {
   content: '';
   position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
+  top: -.2rem;
+  bottom: -.2rem;
+  left: -.2rem;
+  right: -.2rem;
   z-index: -2;
   
   filter: blur(40px);
@@ -169,6 +170,23 @@ html {
   .custom-navbar {
     position: absolute !important;
     background: transparent !important;
+  }
+
+  .relevant-skill h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin-top: 2rem;
+  }
+
+  .relevant-skill p {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .relevant-skill div.row:nth-child(1) {
+    margin-bottom: 6rem;
   }
 }
 
@@ -212,15 +230,20 @@ html {
   }
 
   .relevant-skill h1 {
-    font-size: 88px;
+    font-size: 60px;
     font-weight: bold;
     letter-spacing: 8px;
+    margin-top: 3rem;
   }
 
   .relevant-skill p {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
+  }
+
+  .relevant-skill div.row:nth-child(1) {
+    margin-bottom: 6rem;
   }
 }
 

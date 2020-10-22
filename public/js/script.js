@@ -20,7 +20,7 @@ $(window).scroll(() => {
   });
 });
 
-// Slick-carousel Cards
+// Slick - Carousel Cards
 const slickSettings = {
   arrows: false,
   infinite: true,
@@ -81,31 +81,30 @@ const slickSettings = {
 
 $(".skill-cards").slick(slickSettings);
 
-// Lazy Load
+// Vanilla Lazy Load
 (function () {
   function logElementEvent(eventName, element) {
     console.log(Date.now(), eventName, element.getAttribute("data-src"));
   }
 
-  var callback_error = function (element) {
+  const callback_error = function (element) {
     element.src =
       "https://via.placeholder.com/440x560/?text=Error+Placeholder";
   };
 
-  var ll = new LazyLoad({
+  const ll = new LazyLoad({
     threshold: 0,
     // Assign the callbacks defined above
     callback_error: callback_error
   });
 })();
 
-// fullPage setting
+// fullPage setting just to make navigation
 new fullpage("#fullpage", {
   autoScrolling: false,
   scrollingSpeed: 0,
   navigation: true,
   navigationPosition: 'left',
   navigationTooltips: ['Hello', 'Services', 'Stacks Learned'],
-  lazyLoading: false,
-  scrollBar: false
+  lazyLoading: false, // Disable fullPage lazyloading feature
 });
