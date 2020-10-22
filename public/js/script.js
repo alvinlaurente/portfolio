@@ -3,22 +3,22 @@ $(".navbar-toggler").click(function () {
   $("nav").toggleClass("custom-navbar-collapse");
 })
 
-// Parallax Elements - Doesn't work with fullPage
-// $(window).scroll(() => {
-//   let windowScroll = $(this).scrollTop();
+// Parallax Elements - Doesn't work with fullPage autoScrolling = true
+$(window).scroll(() => {
+  let windowScroll = $(this).scrollTop();
 
-//   $(".intro-content").css({
-//     'transform': 'translate(0px, ' + windowScroll / 6 + '%)'
-//   });
+  $(".intro-content").css({
+    'transform': 'translate(0px, ' + windowScroll / 6 + '%)'
+  });
 
-//   $(".contact-button img").css({
-//     'transform': 'translate(0px, ' + windowScroll / 12 + '%)'
-//   });
+  $(".contact-button img").css({
+    'transform': 'translate(0px, ' + windowScroll / 12 + '%)'
+  });
 
-//   $(".relevant-skill h1").css({
-//     'transform': 'translate(0px, ' + windowScroll / 24 + '%)'
-//   });
-// });
+  $(".relevant-skill h1").css({
+    'transform': 'translate(0px, ' + windowScroll / 24 + '%)'
+  });
+});
 
 // Slick-carousel Cards
 const slickSettings = {
@@ -101,10 +101,11 @@ $(".skill-cards").slick(slickSettings);
 
 // fullPage setting
 new fullpage("#fullpage", {
-  autoScrolling: true,
-  scrollingSpeed: 1200,
+  autoScrolling: false,
+  scrollingSpeed: 0,
   navigation: true,
   navigationPosition: 'left',
   navigationTooltips: ['Hello', 'Services', 'Stacks Learned'],
   lazyLoading: false,
+  scrollBar: false
 });
